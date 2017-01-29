@@ -1,14 +1,10 @@
-@SpringBootApplication
-public class Application extends SpringBootServletInitializer
-{
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder app)
-    {
-        return app.sources(Application.class);
-    }
+@RestController
+class ThisWillActuallyRun {
 
-    public static void main(String [] args)
-    {
-        SpringApplication.run(Application.class, args);
+        @RequestMapping("/")
+        SpringApplicationBuilder configure(SpringApplicationBuilder app)
+        {
+            return app.sources(Application.class);
+        }
+
     }
-}
