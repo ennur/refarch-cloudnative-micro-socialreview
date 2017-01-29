@@ -1,7 +1,7 @@
 @RestController
 class ThisWillActuallyRun {
 
-        @RequestMapping("/")
+        @RequestMapping("/linebot/callback")
         String home() {
                 return "Hello World!"
             }
